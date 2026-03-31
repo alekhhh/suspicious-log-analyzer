@@ -1,0 +1,31 @@
+=== Suspicious Activity Report ===
+Total parsed events: 11
+Successful logins: 2
+Failed logins: 9
+Invalid/skipped lines: 0
+
+Detections by type:
+- failed_login_burst: 1
+- bruteforce_ip_to_many_users: 1
+- unusual_login_time: 1
+- distributed_attack_many_ips_to_user: 1
+
+Top failed IPs:
+- 10.0.0.8: 5
+- 172.16.0.7: 1
+- 172.16.0.9: 1
+- 172.16.0.10: 1
+- 172.16.0.11: 1
+
+Top targeted users:
+- admin: 4
+- alice: 1
+- bob: 1
+- charlie: 1
+- david: 1
+
+Detailed detections:
+- [high] 2026-03-31 00:15:59 failed_login_burst: IP 10.0.0.8 reached 5 failed logins in 10 minutes.
+- [critical] 2026-03-31 00:15:59 bruteforce_ip_to_many_users: IP 10.0.0.8 failed against 5 users (5 failures total).
+- [medium] 2026-03-31 00:18:22 unusual_login_time: User alice successful login from 10.0.0.8 at unusual hour 00:00.
+- [critical] 2026-03-31 02:44:55 distributed_attack_many_ips_to_user: User admin targeted from 4 IPs (4 failures total).

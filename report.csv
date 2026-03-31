@@ -1,0 +1,8 @@
+IP Address,Total Attempts,Failed Attempts,Threat Type,Details,Timestamp range,Endpoint,Severity
+10.10.10.10,6,5,Multiple Failed Logins,IP 10.10.10.10 reached 5 failed logins in 10 minutes.,2026-03-31 00:01:00 -> 2026-03-31 00:06:00,/login,High
+10.10.10.10,6,5,Brute Force Attack,IP 10.10.10.10 failed against 5 users (5 failures total).,2026-03-31 00:01:00 -> 2026-03-31 00:06:00,/login,High
+10.10.10.10,6,5,Unusual Login Time,User alice successful login from 10.10.10.10 at unusual hour 00:00.,2026-03-31 00:01:00 -> 2026-03-31 00:06:00,/login,Medium
+10.0.0.8,6,5,Multiple Failed Logins,IP 10.0.0.8 reached 5 failed logins in 10 minutes.,2026-03-31 00:12:03 -> 2026-03-31 00:18:22,/login,High
+10.0.0.8,6,5,Brute Force Attack,IP 10.0.0.8 failed against 5 users (5 failures total).,2026-03-31 00:12:03 -> 2026-03-31 00:18:22,/login,High
+10.0.0.8,6,5,Unusual Login Time,User alice successful login from 10.0.0.8 at unusual hour 00:00.,2026-03-31 00:12:03 -> 2026-03-31 00:18:22,/login,Medium
+-,4,4,Distributed Brute Force,User admin targeted from 4 IPs (4 failures total).,2026-03-31 02:41:11 -> 2026-03-31 02:44:55,/ssh,High
